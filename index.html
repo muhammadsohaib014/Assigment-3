@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page + '.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>
+            Myself Muhammad Sohaib, a student of UMT Lahore, currently in the 7th semester pursuing a BS in Computer Science. I am passionate about web development.
+        </p>
+    </header>
+
+    <main>
+        <img src="images/mine.jpeg" alt="Description of the image">
+        <nav>
+            <button onclick="redirectToPage('Personalities')">Favorite Personalities</button>
+            <button onclick="redirectToPage('cities')">Favorite Cities</button>
+            <button onclick="redirectToPage('tourist-spots')">Favorite Tourist Spots</button>
+            <button onclick="redirectToPage('contact')">Contact Information</button>
+        </nav>
+    </main>
+
+    <footer>
+        &copy; 2024 My Website. All rights reserved.
+    </footer>
+</body>
+</html>
